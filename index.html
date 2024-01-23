@@ -8,7 +8,7 @@
 	<meta property="og:image" content="https://ricardohdzm.github.io/caimanation/img/logos/meta.png">
 	<meta property=”og:url” content=”https://ricardohdzm.github.io/caimanation/”/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>CAIMANATION: SPORTS ORG</title>
+	<title>CAIMANATION</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,44 +23,62 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<section id="home" class="caimanation">
-	<div class="row h-100 justify-content-center" data-aos="fade-ing">
-		<div class="col-10 my-auto py-5">
-			<img class="main-logo" src="img/logos/caimanation.png">
-			<div class="row justify-content-center">
-				<div class="col-lg-3 col-6">
-					<img class="logo" src="img/logos/softball.png">
-					<h2>Caimanes<br>de Villas</h2>
-					<p>Softbol</p>
-				</div>
-				<div class="col-lg-3 col-6">
-					<img class="logo" src="img/logos/football.png">
-					<h2>Caimanes<br>Club de Futbol</h2>
-					<p>Futbol 7</p>
-				</div>
-				<div class="col-lg-3 col-6">
-					<img class="logo" src="img/logos/padel.png">
-					<h2>Caimanes<br>Padel Squad</h2>
-					<p>Padel</p>
-				</div>
-				<div class="col-lg-3 col-6">
-					<img class="logo" src="img/logos/runners.png">
-					<h2>Caimanes<br>Runners Club</h2>
-					<p>RUNNING</p>
-				</div>
-				<!--<div class="col-lg-2 col-6">
-					<img class="logo" src="img/logos/esports.png">
-					<h2>Caiman<br>Esports</h2>
-					<p>Esports</p>
-				</div>-->
-			</div>
+<section id="home" class="home">
+	<div class="row h-100 justify-content-center" data-aos="fade-in">
+		<div class="col-10 my-auto">
+			<h1><img class="main-logo" src="img/logos/caimanation.png"></h1>
+			<a href="#deportes" class="btn">DESCUBRE</a>
 		</div>
 	</div>
 </section>
 
-<section class="footer p-3">
-	<div class="row justify-content-center">
-		<div class="col-10">
+<section id="deportes" class="caimanation">
+	<div class="row h-100 justify-content-center" data-aos="fade-up">
+		<div class="col-lg-12 col-12 py-5">
+			<h1>NUESTROS EQUIPOS</h1>
+		</div>				
+		<div class="col-lg-3 col-6">
+			<img class="logo" src="img/logos/softball.png">
+			<h2>Caimanes<br>de Villas</h2>
+			<p>Sóftbol</p>
+		</div>
+		<div class="col-lg-3 col-6">
+			<img class="logo" src="img/logos/football.png">
+			<h2>Caimanes<br>Club de Fútbol</h2>
+			<p>Fútbol 7</p>
+		</div>
+		<div class="col-lg-3 col-6">
+			<img class="logo" src="img/logos/volleyball.png">
+			<h2>Volleyball<br>Caimanes</h2>
+			<p>Voleibol</p>
+		</div>
+		<div class="col-lg-3 col-6">
+			<img class="logo" src="img/logos/padel.png">
+			<h2>Caimanes<br>Padel Squad</h2>
+			<p>Padel</p>
+		</div>
+		<div class="col-lg-3 col-6">
+			<img class="logo" src="img/logos/tennis.png">
+			<h2>Caimanes<br>ACES</h2>
+			<p>Tennis</p>
+		</div>
+		<div class="col-lg-3 col-6">
+			<img class="logo" src="img/logos/runners.png">
+			<h2>Caimanes<br>Runners Club</h2>
+			<p>RUNNING</p>
+		</div>
+		<div class="col-lg-3 col-6">
+			<img class="logo" src="img/logos/bowling.png">
+			<h2>Caimanes<br>Strikers</h2>
+			<p>Boliche</p>
+		</div>
+	</div>
+</section>
+
+<section class="footer pt-5">
+	<div class="row h-100 justify-content-center pt-5">
+		<div class="col-10 pt-5">
+			<h2>#FEARTHECAIMAN</h2>
 			<img src="img/logos/caimanation.png" class="alto">
 			<p>COPYRIGHT © 2023 CAIMANATION SPORTS ORG. ALL RIGHTS RESERVED<br>DESIGNED BY JRHM WEB STUDIO</p>
 		</div>
@@ -76,35 +94,11 @@
 
 <script>
 	AOS.init({
-		duration: 3000,
+		duration: 2000,
 		delay: 0,
 		easing: 'ease-in-out',
 		once: true,
 	});
-</script>
-
-<script>
-	var countDownDate = new Date("Jun 20, 2024 00:00:00").getTime();
-
-	var x = setInterval(function() {
-
-		var now = new Date().getTime();
-
-		var distance = countDownDate - now;
-
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-		document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-		+ minutes + "m " + seconds + "s ";
-
-		if (distance < 0) {
-			clearInterval(x);
-			document.getElementById("countdown").innerHTML = "NOW OPEN";
-		}
-	}, 1000);
 </script>
 
 

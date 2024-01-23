@@ -24,9 +24,20 @@ div{
 
 /* TEXT */
 
-h2{
-	font-size: 14px;
+h1{
+	font-size: x-large;
 	font-weight: bold;
+	letter-spacing: 15px;
+}
+
+h2{
+	font-size: small;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.caimanation h1{
+	margin: 50px;
 }
 
 .caimanation p{
@@ -45,6 +56,11 @@ h2{
 
 /* SECTIONS */
 
+.home{
+	height: 100vh;
+	text-align: center;
+}
+
 .caimanation{
 	height: fit-content;
 	text-align: center;
@@ -59,10 +75,16 @@ h2{
 	letter-spacing: 0px;
 }
 
+.footer h2{
+	letter-spacing: 10px;
+	color: #bf0f35;
+	margin-bottom: 5rem;
+}
+
 /* IMG */
 
 .main-logo{
-	width: 700px;
+	width: 800px;
 }
 
 .logo{
@@ -94,13 +116,13 @@ h2{
 	padding: 10px;
 	transition: .2s;
 	width: 250px;
+	letter-spacing: 10px;
 }
 
 .btn:hover{
-	background-color: #fff;
-	color: #000;
-	border-color: #fff;
-	transform: translateY(-5%);
+	background-color: #bf0f35;
+	color: #fff;
+	border-color: #bf0f35;
 }
 
 .btn:focus, .btn:active{
@@ -143,7 +165,7 @@ h2{
 /* SCROLLBAR */
 
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -152,7 +174,6 @@ h2{
 
 ::-webkit-scrollbar-thumb {
 	background: #fff;
-	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
