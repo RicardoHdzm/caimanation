@@ -11,28 +11,171 @@ body{
 	text-transform: uppercase;
 }
 
-
-img{
-	user-select: none;
-}
-
 div{
 	margin: 0!important;
 	padding: 0!important;
 }
 
+/* NAV */
+
+.logo-sm-nav{
+	display: none;
+	width: 75px;
+}
+
+.navbar{
+	background-color: #0b0f16;
+	font-size: small;
+	z-index: 3;
+	font-weight: bold;
+	background-image: url("../img/bg/navbar.png");
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.nav-link{
+	color: #f1f1f1 !important;
+	margin-top: 10px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.nav-link:hover {
+	text-decoration: none!important;
+	color: #690b2b!important;
+}
+
+.nav-link b{
+	color: #690b2b!important;
+}
+
+.navbar-toggler { 
+	margin: 0 auto;
+}
+
+.custom-toggler .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: transparent;
+	margin-right: 10px;
+} 
+
+
+.custom-toggler:focus, .custom-toggler:active, .custom-toggler:hover{
+	box-shadow: none!important;
+	outline: 0;
+}
+
+.logo-nav{
+	width: 125px;
+}
+
+
+.nav-item{
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+.nav-brand{
+	text-align: center;
+}
+
+
+
+.logo-nav-small{
+	width: 100px;
+}
+
 /* TEXT */
 
 h1{
-	font-size: x-large;
+	font-size: 48px;
 	font-weight: bold;
-	letter-spacing: 15px;
+	letter-spacing: 10px;
+}
+
+.cardx{
+	position: relative;
+	border-radius: 10px;
+	width: 100%!important;
+	height: fit-content;
+	background-size: cover;
+	background-position: center;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+	padding: 25px!important;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.cardx::before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, .8);
+	background-size: contain;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	z-index: 0;
+	transition: .5s;
+}
+
+.card-logo {
+	position: relative;
+	transition: .5s;
+}
+
+
+.cardx:hover::before{
+	background-color: rgba(0, 0, 0, .6);
+}
+
+.cardx:hover .logo{
+	transform: scale(1.05);
+}
+
+
+.soft{
+	background-image: url("../img/banners/softball.jpg");
+}
+
+.fut{
+	background-image: url("../img/banners/fut.jpeg");
+}
+
+.volley{
+	background-image: url("../img/banners/volley.jpg");
+}
+
+.padel{
+	background-image: url("../img/banners/padel.jpg");
+}
+
+.tennis{
+	background-image: url("../img/banners/tennis.png");
+}
+
+.run{
+	background-image: url("../img/banners/run.jpg");
+}
+
+.bowling{
+	background-image: url("../img/banners/bowling.jpg");
+}
+
+.golf{
+	background-image: url("../img/banners/golf.jpg");
 }
 
 h2{
-	font-size: small;
+	font-size: medium;
 	font-weight: bold;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
 .caimanation h1{
@@ -41,9 +184,16 @@ h2{
 
 .caimanation p{
 	font-size: x-small;
-	font-weight: bold;
+	font-weight: bolder;
 	letter-spacing: 5px;
-	color: #bf0f35;
+}
+
+hr{
+	padding: 0;
+	border: 4px solid #bf0f35;
+	text-align: center;
+	opacity: 1;
+	width: 35px;
 }
 
 ::selection {
@@ -56,8 +206,12 @@ h2{
 /* SECTIONS */
 
 .home{
-	height: 100vh;
+	height: 80vh;
 	text-align: center;
+	background-color: red;
+	background-image: url("../img/banners/banner.jpg");
+	background-size: cover;
+	background-position: center;
 }
 
 .caimanation{
@@ -82,22 +236,22 @@ h2{
 
 /* IMG */
 
+img{
+	user-select: none;
+}
+
 .main-logo{
-	width: 800px;
+	height: 80vh;
 }
 
 .logo{
-	height: 150px;
+	height: 200px;
 	transition: .5s;
 	margin: 15px!important;
 }
 
-.logo:hover{
-	transform: scale(1.05);
-}
-
 .alto{
-	width: 150px;
+	width: 75px;
 }
 
 
@@ -133,6 +287,18 @@ h2{
 
 @media only screen and (max-width: 1024px){
 
+	.logo-sm-nav{
+		display: inline;
+	}
+
+	.logo-nav{
+		display: none;
+	}
+
+	.hide{
+		display: none;
+	}
+
 	.main-logo{
 		width: 90%;
 		height: auto;
@@ -142,13 +308,21 @@ h2{
 		font-size: x-large;
 	}
 
+	h2{
+		font-size: small;
+	}
+
 	p{
 		font-size: small;
 	}
 
-	.zoukmaya{
-		height: 100vh;
-		margin-bottom: 10rem!important;
+	.cardx{
+		width: 100%;
+	}
+
+	.logo{
+		width: 50%;
+		height: auto;
 	}
 
 	.btn{
@@ -156,8 +330,9 @@ h2{
 	}
 
 	.alto{
-		width: 100px;
+		width: 75px;
 	}
+
 }
 
 
