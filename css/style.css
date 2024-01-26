@@ -324,13 +324,13 @@ img{
 }
 
 .iconx{
-	width: 50px;
+	width: 3.5vw;
 }
 
 #wappBtn {
 	position: fixed;
 	bottom: 50px;
-	right: 50px;
+	right: 35px;
 	z-index: 90;
 	outline: none; 
 	background-color: #bf0f35; 
@@ -405,6 +405,10 @@ img{
 
 	.footer-logo{
 		height: 75px;
+	}
+
+	.iconx{
+		width: 50px;
 	}
 
 }
