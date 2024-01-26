@@ -23,7 +23,7 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#Navbar" data-bs-offset="50">
+<body data-bs-spy="scroll" data-bs-target="#Navbar" data-bs-offset="200">
 	<nav id="Navbar" class="navbar navbar-expand-lg sticky-top justify-content-between px-5">
 		<a class="navbar-brand"href="#"><img src="img/logos/nav-logo-1.png" class="logo-sm-nav"></a>
 		<button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,8 +56,8 @@
 	<section id="nosotros" class="caimanation p-5">
 		<div class="row h-100 justify-content-center py-5" data-aos="fade-up">
 			<div class="col-lg-8 col-10 py-5">
-				<center><hr></center>
 				<h1>NOSOTROS</h1>
+				<center><hr></center>
 				<h3>En el corazón de Culiacán, nace la CAIMANATION, un movimiento deportivo dedicado a fomentar la pasión por el deporte y el bienestar en nuestra comunidad. Nos enorgullece ser el epicentro donde la emoción, la camaradería y el rendimiento deportivo se encuentran.<br><br>¡Descubre la emoción de la CAIMANATION, donde la comunidad se encuentra con el deporte para crear experiencias inolvidables!</h3>
 			</div>
 		</div>
@@ -66,8 +66,8 @@
 	<section id="equipos" class="caimanation p-5">
 		<div class="row h-100 justify-content-center py-5" data-aos="fade-up">
 			<div class="col-lg-8 col-10 py-5">
-				<center><hr></center>
 				<h1>NUESTROS EQUIPOS</h1>
+				<center><hr></center>
 				<h3>Ofrecemos una amplia gama de deportes para satisfacer los diversos intereses de nuestra comunidad. Desde la emoción del fútbol hasta la precisión del pádel, pasando por la velocidad del running y la destreza del softball, contamos con equipos dedicados y apasionados en cada disciplina.</h3>
 			</div>
 			<div class="row justify-content-center">
@@ -161,21 +161,37 @@
 	<section id="sponsors" class="caimanation p-5">
 		<div class="row h-100 justify-content-center py-5" data-aos="fade-in">
 			<div class="col-10 my-auto py-5">
-				<center><hr></center>
 				<h1>Sponsors</h1>
+				<center><hr></center>
 				<div class="row justify-content-center py-5">
 					<div class="col-10 col-lg-4">
 						<img src="img/sponsors/jrhm.png" class="sponsors">
-					</div>
-					<div class="col-10 col-lg-4">
-						<img src="img/sponsors/limman.png" class="sponsors">
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="footer pt-5">
+	<section id="contacto" class="caimanation p-5">
+		<div class="row h-100 justify-content-center py-5" data-aos="fade-in">
+			<div class="col-10 my-auto py-5">
+				<h1>Estamos Conectados</h1>
+				<center><hr></center>
+				<div class="row justify-content-center py-5">
+					<div class="col-6 col-lg-6 py-5">
+						<h1><i class="fa-brands fa-instagram"></i></h1>
+						<h2><span>@</span>caimanation.mx</h2>
+					</div>
+					<div class="col-6 col-lg-6 py-5">
+						<h1><i class="fa-brands fa-whatsapp"></i></h1>
+						<h2><span>(</span>667<span>)</span> 000 00 00</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="footer" class="footer pt-5">
 		<div class="row h-100 justify-content-center pt-5">
 			<div class="col-10 pt-5">
 				<h2>#FEARTHECAIMAN</h2>
@@ -185,6 +201,10 @@
 			</div>
 		</div>
 	</section>
+
+	<button id="wappBtn" title="Ir a Whatsapp">
+		<a href="#top"><img class="iconx" src="img/logos/wapp.png"></a>
+	</button></a>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -210,6 +230,15 @@
 				window.scrollTo(0, 0);
 			}
 		}
+	</script>
+
+	<script src="https://unpkg.com/kursor"></script>
+	<script>
+		new kursor({
+			type: 1,
+			color: '#bf0f35',
+			removeDefaultCursor: true
+		})
 	</script>
 
 

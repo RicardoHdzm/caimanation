@@ -193,7 +193,7 @@ h3{
 }
 
 .caimanation h1{
-	margin: 50px;
+	margin: 25px;
 }
 
 .caimanation p{
@@ -208,6 +208,7 @@ hr{
 	text-align: center;
 	opacity: 1;
 	width: 35px;
+	margin-bottom: 25px;
 }
 
 ::selection {
@@ -314,6 +315,39 @@ img{
 	outline: 0;
 }
 
+.up{
+	transition: .5s;
+}
+
+.up:hover{
+	transform: translateY(-5px);
+}
+
+.iconx{
+	width: 50px;
+}
+
+#wappBtn {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	z-index: 90;
+	outline: none; 
+	background-color: #bf0f35; 
+	cursor: pointer;
+	font-weight: bolder;
+	border-color: #fff!important;
+	border: solid;
+	border-width: 5px;
+	transition: 0.5s ease;
+	border-radius: 100%;
+	padding: 5px!important;
+}
+
+#wappBtn:hover {
+	transform: scale(1.1);
+}
+
 /* SCREEN */
 
 @media only screen and (max-width: 1024px){
@@ -336,7 +370,7 @@ img{
 	}
 
 	h1{
-		font-size: x-large;
+		font-size: xx-large;
 	}
 
 	h2{
@@ -392,4 +426,9 @@ img{
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #bf0f35;
+}
+
+span{
+	color: #bf0f35;
+	font-weight: bold;
 }
