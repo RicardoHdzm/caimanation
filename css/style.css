@@ -33,16 +33,17 @@ div{
 	margin-top: 10px;
 	letter-spacing: 2px;
 	font-weight: bold;
-	transition: .5s;
+	transition: .2s;
 }
 
-.nav-link b{
-	color: #690b2b!important;
+.nav-link:hover{
+	color: #bf0f35!important;
 }
 
 .nav-link.active {
 	font-weight: bolder;
 	transform: scale(1.2);
+	color: #bf0f35!important;
 }
 
 .navbar-toggler { 
@@ -150,6 +151,10 @@ h1{
 	background-image: url("../img/banners/fut.jpg");
 }
 
+.basket{
+	background-image: url("../img/banners/basket.jpg");
+}
+
 .volley{
 	background-image: url("../img/banners/volley.jpg");
 }
@@ -217,7 +222,6 @@ hr{
 .home{
 	height: 100vh;
 	text-align: center;
-	background-color: red;
 	background-image: url("../img/banners/banner.jpg");
 	background-size: cover;
 	background-position: center;
