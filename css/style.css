@@ -148,7 +148,7 @@ h1{
 }
 
 .fut{
-	background-image: url("../img/banners/fut.jpg");
+	background-image: url("../img/banners/fut.jpeg");
 }
 
 .basket{
@@ -223,7 +223,7 @@ hr{
 .home{
 	height: 100vh;
 	text-align: center;
-	background-image: url("../img/banners/caimanation.jpeg");
+	background-image: url("../img/banners/caimanation.jpg");
 	background-size: cover;
 	background-position: center;
 }
@@ -438,5 +438,5 @@ img{
 
 span{
 	color: #bf0f35;
-	font-weight: bold;
+	font-weight: bolder;
 }
